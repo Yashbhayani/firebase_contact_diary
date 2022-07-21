@@ -19,14 +19,6 @@ const Home = () => {
     }
 
     useEffect(() => {
-    /*  onValue(ref(db), (snapshot) => {
-        const data = snapshot.val();
-        if (data.contact !== null) {
-          Object.values(data.contact).map((todo) => {
-            setContact((oldArray) => [...oldArray, todo]);
-          })
-        }
-      })*/
       data()
     },[]);
 
@@ -39,21 +31,6 @@ const Home = () => {
       remove(ref(db,'contact/', id))
       data()
     }
-
-  /*      
-        const dbref = ref(db)
-        
-        get(child(dbref, 'contact/'))
-        .then((snapshot) => {
-            let data = snapshot.val()
-            console.log(data)
-            if (data !== null) {
-                Object.values(data).map((todo) => {
-                  setContact((oldArray) => [...oldArray, todo]);
-                })
-              }
-        })
-*/
 
   return (
     <div className='container-fluid'>
