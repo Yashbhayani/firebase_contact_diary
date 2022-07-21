@@ -10,6 +10,7 @@ const Home = () => {
     const  data = () => {
       onValue(ref(db), (snapshot) => {
         const data = snapshot.val();
+        setContact([])
         if (data.contact !== null) {
           Object.values(data.contact).map((todo) => {
             setContact((oldArray) => [...oldArray, todo]);
