@@ -2,13 +2,13 @@ import { initializeApp } from "firebase/app";
 import { getDatabase } from "firebase/database";
 
   const firebaseConfig = {
-  apiKey: "AIzaSyB60KmmNGmybj75InbpnVzndzcmBMfX9u0",
-  authDomain: "contact-diary-f0d24.firebaseapp.com",
-  databaseURL: "https://contact-diary-f0d24-default-rtdb.firebaseio.com",
-  projectId: "contact-diary-f0d24",
-  storageBucket: "contact-diary-f0d24.appspot.com",
-  messagingSenderId: "407453728949",
-  appId: "1:407453728949:web:587ad196da8959bc48fefc"
+    apiKey: "YOUR_API_KEY",
+    authDomain: "YOUR_authDomain",
+    projectId: "YOUR_projectId",
+    databaseURL: "YOUR_databaseURL",
+    storageBucket: "YOUR_storageBucket",
+    messagingSenderId: "YOUR_messagingSenderId",
+    appId: "YOUR_appId"
 };
 
 const app = initializeApp(firebaseConfig);
